@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-color: beige;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    
+   
+}
+p{
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+.container input{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid black;  
+    
+}
+#sub:hover{
+    background-color: rgb(76, 0, 255);
+    
+}
+#sub{
+    background-color: black;
+}
+#sp:hover{
+    background-color: gray;
+}
+.container input{
+    margin-top: 10px;
+}
+.container select{
+    margin-top: 10px;
+}

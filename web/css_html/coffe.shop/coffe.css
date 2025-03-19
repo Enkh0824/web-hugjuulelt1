@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+.roboto-slab-font {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0.75rem;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+.main-color{
+    color: #ac7e68;
+}
+nav ul{
+display: flex;
+list-style: none;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    margin: 1rem;
+    padding: 1rem;
+}
+nav ul li a:hover{
+    background-color: #ac7e68;
+}
+header{
+    background: url(img/home1.jpg)  ;
+    height: 100vh;
+}
+header h1{
+    color: #fff;
+    font-size: 4rem;
+   
+}
+ header .header-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+ }
+ header .header-content p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+ 
+ }
+ #first{
+    display: flex;
+   
+ }
+  #first .coffee-pic{
+    background: url(img/home-image-1.jpg) no-repeat;
+     height: 650px; 
+     width: 100px;
+    flex: 1;
+    margin: 4rem;
+    border: rgb(73, 70, 69) solid 0.5rem;
+            padding: 2rem;
+
+  
+ }
+ 
+ #first .coffee-text{
+    flex: 1;
+    margin: 3rem; 
+    /* padding: 3rem; */
+ }
+
+ #first .coffee-text p{
+    padding: 1.5rem;
+    font-size: 1.5rem;
+ }
+
+ #first .coffee-text h2{
+    font-size: 2.8rem;
+ }
+
+
+
+
+  #second {
+    background: url(img/home2.jpg) ;
+    background-size: cover;
+    height: 850px; 
+    font-size: 1.5rem; 
+    color: #fff;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+
+  
+ }
+ #second a{
+    color: #fff;
+    text-decoration: none;
+    margin: 2rem;
+  }
+
+ #second a:hover{
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #ac7e68;
+    align-items: center;
+ }
+
+  
+
+  .sec1 #p1{
+    display: grid;
+    grid-template-columns: repeat(2, 400px 400px); 
+    
+    gap: 1.5rem 25rem;
+    margin-left: 20rem; 
+    
+   
+  }
+  .sec1 h2{
+    color: #2e2d2d;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    margin: 2.5rem;
+  }
+  
+  .set{
+   /* display: grid; */
+   grid-template-columns: repeat(2, 400px 400px); 
+
+   gap: 1.5rem 25rem;
+   margin-left: 20rem; }
+
+   .set1{
+      /* display: grid; */
+      grid-template-columns: repeat(2, 400px 400px); 
+   
+      gap: 1.5rem 25rem;
+      margin-left: 70rem; }
+
+   .end a{
+      background-color: #222;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0.75rem;
+    align-items: center;
+    /* position: sticky; */
+    /* top: 0; */
+  margin: 6rem;
+  text-decoration: none;
+  position: sticky;
+   }
+
+   .last #im {
+      overflow: hidden; /* Зургийн илүү хэсгийг нууцлах */
+    border-radius: 50%; /* Бөөрөнхий хэлбэрт оруулах */
+ 
+    width: 50%;
+    height: 50%;
+    object-fit: cover; /* Зургийг төгс дүүргэх, хэт том бол зүсэж авч, жижгэрэх */
+ 
+      
+   }
+
+   .svvlinh{
+      background: url(img/home3.jpg);
+      background-size: cover;
+    height: 850px; 
+    font-size: 1.5rem; 
+    color: #fff;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+
+   }
+
+      

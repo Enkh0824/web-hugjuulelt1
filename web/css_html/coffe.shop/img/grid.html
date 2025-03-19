@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid туршилт</title>
+    <style>
+        h1 {
+            background: rgb(237, 191, 117);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        article {
+            padding: 0.5rem;
+            /* margin: 0.35rem; */
+            background: rgb(58, 196, 145);
+        }
+
+        .article-1{
+            /* grid-row-start: 0; */
+            /* grid-row-end: 5; */
+             /* grid-column: 1/5;  */
+            grid-area: article-1;
+        }
+
+
+
+        .article-2{
+            /* grid-column-start: 0; */
+            /* grid-column-end: 10; */
+            /* grid-row: 2/4; */
+            /* grid-column: 1/3; */
+             /* grid-area: 2/1/4/3;  */
+            grid-area: article-2;
+        }
+
+        .article-3{grid-area: article-3;}
+        .article-4{grid-area: article-4;}
+
+
+
+
+        section {
+          display: grid; 
+             /* grid-template-columns: 2fr 1fr 1fr 1fr;    */
+             /* grid-template-columns: repeat(2, 400px 200px);   */
+              /* grid-template-columns: 100px minmax(100px, 500px) 100px;   */
+              /* grid-template-columns: 100px 300px 200px;   */
+              /* grid-template-columns: 25% 25% 25% 25%;  */
+             gap: 1.5rem 3.5rem;   
+            /* grid-template-columns: 1fr 2fr 3fr 4fr; */
+            /* grid-template-rows: 1fr 2fr 3fr 4fr; */
+            /* grid-template: 40% 50% 50px / 100px 50% 200px; */
+            grid-template-areas: 
+                    "article-1 article-2 article-2"
+                    "article-3 article-3 article-4";
+                    grid-template-columns: 1fr 1fr 1fr;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Grid</h1>
+    </header>
+    <section>
+        <article class="article-1">
+            <h2>Нийтлэл нэг</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Eum adipisci sit temporibus consequuntur aliquam sunt aperiam corrupti, cum rerum asperiores?</p>
+        </article>
+        <article class="article-2">
+            <h2>Нийтлэл хоёр</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Eum adipisci sit temporibus consequuntur aliquam sunt aperiam corrupti, cum rerum asperiores?</p>
+        </article>
+        <article class="article-3">
+            <h2>Нийтлэл гурав</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum adipisci sit temporibus consequuntur aliquam sunt aperiam corrupti, cum rerum asperiores?</p>
+        </article>
+        <article class="article-4">
+            <h2>Нийтлэл дөрөв</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum adipisci sit temporibus consequuntur aliquam sunt aperiam corrupti, cum rerum asperiores?</p>
+        </article>
+    </section>
+</body>
+</html>
