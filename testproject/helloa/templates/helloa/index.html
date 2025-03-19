@@ -1,16 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+
+    {% extends "helloa/layout.html" %}
+    {% block body %}
+    
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati tenetur rem magni, illo eum labore ab, eius non nisi dolore, nam quasi soluta. Voluptatem debitis culpa, minus blanditiis maiores excepturi.</p>
     <h1>{{type}}</h1>
     <h2>{{value}}</h2>
      {% for val in items %}
      <p>{{val}}</p>
     {% endfor %}
-</body>
-</html>
+
+    {% endblock %}
+<!-- </body> -->
+<!-- </html> -->
