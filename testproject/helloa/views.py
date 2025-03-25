@@ -1,9 +1,17 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django import forms
 # Create your views here.
-def index(request):
+
+
+class NewTestForm(forms.Form):
+        test=forms.CharField(label='юм бичих')
+        password = forms.CharField(max_length=32, widget=forms.PasswordInput)
+
+def test(request):
     # return HttpResponse("sn bnu")
-    return render(request, "helloa/index.html", {"value": "sain baina uu" , "type":"mongol", "a":78, "items":["hjkl","ghjkl;","ertye"]})
+    return render(request, "helloa/test.html", {"form":NewTestForm()})
+
 def wrong(request):
     return HttpResponse ("buruu site")
 def uidalt(request):
@@ -18,4 +26,6 @@ def greeting(request,language):
         return HttpResponse("snovi gdom")
     else: 
         return HttpResponse("hello")
+    
+    
 
