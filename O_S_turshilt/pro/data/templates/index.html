@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="{% static 'data/style.css' %}">
 </head>
 <body>
-    <h1>Hello</h1>
+    <h1>Зорчих чиглэлүүд:</h1>
+    <ul>
+        {% for trans in tr %}
+        <li><a href="{% url 'a_transport' trans.id %}">Чиглэл</a> {{trans.id}}. {{trans.origin }} -c {{trans.destination}} Хоорондын зай: {{trans.distance}}</li>
+        
+        {% endfor %}
+    </ul>
+  
 </body>
 </html>

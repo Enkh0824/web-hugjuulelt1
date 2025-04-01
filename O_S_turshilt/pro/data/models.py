@@ -13,3 +13,10 @@ class Imformation(models.Model):
     distance= models.IntegerField()
     def __str__(self):
         return f"{self.id}. {self.origin} -c {self.destination}"
+    
+class Passenger(models.Model):
+    lastname=models.CharField(max_length=64)
+    firstname=models.CharField(max_length=64)
+    transports=models.ManyToManyField(Imformation, blank=True , related_name="passengers")
+    def __str__(self):
+        return f"{self.lastname} овогтой {self.firstname}"
